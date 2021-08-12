@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v3.8.5" />
+    <title>M3D4HW</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.3/examples/album/"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .jumbotron {
+        color: azure;
+        font-weight: bold;
+        height: 350px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+        background-color: rgb(202, 201, 201);
+        background-image: url("https://premium.vgc.no/v2/images/ec314ceb-bdea-4576-9f48-d20b9fc425b9?fit=crop&h=685&w=1024&s=f4392cab1b48b63c5bae3daea71a892cf17170b3");
+        background-repeat: no-repeat;
+      }
+      @media (min-width: 768px) {
+        .jumbotron {
+          padding-top: 6rem;
+          padding-bottom: 6rem;
+        }
+      }
+
+      .jumbotron p:last-child {
+        margin-bottom: 0;
+      }
+
+      .jumbotron-heading {
+        font-weight: 300;
+      }
+
+      .jumbotron .container {
+        max-width: 40rem;
+      }
+
+      footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      footer p {
+        margin-bottom: 0.25rem;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+
+        body > main > section > div > form {
+          margin-top: 110px;
+          margin-left: 80px;
+        }
+
+        #rowPic > div:nth-child(n) > div > img {
+          padding: 10px;
+        }
+        #rowPic > div:nth-child(n) > div > div {
+          height: 200px;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">
+                Add some information about the album below, the author, or any
+                other background context. Make it a few sentences long so folks
+                can pick up some informative tidbits. Then, link them off to
+                some social networking sites or contact information.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="mr-2"
+              viewBox="0 0 24 24"
+              focusable="false"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>Bokhandel</strong>
+          </a>
+          <button>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading"></h1>
+
+          <form class="form-inline">
+            <div class="form-group mb-2">
+              <label for="staticEmail2" class="sr-only">Email</label>
+              <input type="text" readonly class="form-control-plaintext" />
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label class="sr-only">Search</label>
+              <input
+                type="text"
+                class="form-control"
+                id="userInput"
+                placeholder="Search"
+              />
+            </div>
+            <button
+              type="submit"
+              onclick="searchQ()"
+              class="btn btn-danger btn-primary mb-2"
+            >
+              Search
+            </button>
+          </form>
+          <p>
+            <!-- <a
+              href="#"
+              class="btn btn-danger btn-primary my-2"
+              id="firstBtn"
+              onclick="displayCartList()"
+              >Show Book List</a
+            > -->
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row" id="rowPic"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>
+          Album example is &copy; Bootstrap, but please download and customize
+          it for yourself!
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      window.onload = () => {
+        displaybook();
+        displayCartList();
+        // displaybook("forest");
+      };
+      let cartList = [];
+      let bookList = [];
+      books = [];
+
+      function searchQ() {
+        let inputValue = document.getElementById("userInput").value;
+        console.log(inputValue);
+      }
+
+      function displaybook() {
+        const rowPic = document.getElementById("rowPic");
+
+        fetch("https://striveschool-api.herokuapp.com/books", {
+          method: "GET",
+          headers: {},
+        })
+          .then((response) => response.json())
+          .then((book) => {
+            displayCards(book);
+          })
+
+          .catch((err) => {
+            console.log(err);
+          });
+      }
+
+      function displayCards(books) {
+        rowPic.innerHTML += books.map(
+          (book) => `<div class="col-md-3 col-lg-2">
+                   <div class="card  mb-4 shadow-sm" >
+                     <img
+                       class="bd-placeholder-img card-img-top"
+
+                       height="200"
+                       src=${book.img}
+                       preserveAspectRatio="xMidYMid slice"
+                       focusable="false"
+                       role="img"
+                       aria-label="Placeholder: Thumbnail"                >
+                       <title>Placeholder</title>
+                       </text>
+                     </img>
+                     <div class="card-body "  >
+                       <p class="card-text " >
+                         ${book.title}
+                       </p> <div> <span class="badge badge-danger">category</span></div>
+                       <div
+                         class="d-flex justify-content-between align-items-center"
+                       >
+                         <div class="btn-group">
+
+                           <button
+
+                             type="button "
+
+      onclick="addToCart()"
+                             class="btn addToCart btn-sm btn-outline-secondary"
+                           >
+                            Add to cart ${book.price}
+                           </button>
+                         </div>
+
+
+
+                       </div>
+                     </div>
+                 </div>
+                 </div>
+                 </div>`
+        );
+      }
+
+      function addToCart(title) {
+        console.log("add books to cart");
+
+        cartList.push(book);
+        console.log(cartList);
+      }
+      function filterBooks(query) {
+        const filteredBooks = books.filter((book) =>
+          book.title.toLowerCase().includes(query.toLowerCase())
+        );
+
+        displaybook(filteredBooks);
+      }
+
+      //   let changeButton = document.getElementsByClassName(".btn");
+      //   function changeButtonFun() {
+      //     console.log("coool");
+
+      //     //changeButton.style.visibility = "hidden";
+
+      //     return true;
+      //   }
+
+      //   const hideDynamic = document.getElementsByClassName(
+      //     ".card .hideDynamicCar"
+      //   );
+      //   const hideFun = function () {
+      //     console.log("hide card");
+      //     hideDynamic.style.visibility = "hidden";
+      //   };
+
+      function displayCartList() {
+        rowPic.innerHTML += `<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+  <div>Check your shoping list. click here.</div>  <img src="https://media.giphy.com/media/3hp5kJ0s5TBAs/giphy.gif">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Shoping list</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    The current link item
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">A second link item <button
+                type="button "
+                class="btn-warning addToCart btn-sm btn-outline-secondary"
+                           >
+                            Next
+                           </button></a>
+  <a href="#" class="list-group-item list-group-item-action">A third link item <button
+                type="button "
+                class="btn-warning addToCart btn-sm btn-outline-secondary"
+                           >
+                            Next
+                           </button></a>
+  <a href="#" class="list-group-item list-group-item-action">A fourth link item <button
+                type="button "
+                class="btn-warning addToCart btn-sm btn-outline-secondary"
+                           >
+                            Next
+                           </button></a>
+  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item <button
+                type="button "
+                class="btn-warning addToCart btn-sm btn-outline-secondary"
+                           >
+                            Next
+                           </button></a>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Lukk</button>
+        <button
+                type="button "
+                class="btn-warning addToCart btn-sm btn-outline-secondary"
+                           >
+                            Gå til kasse
+                           </button>
+      </div>
+    </div>
+  </div>
+</div>`;
+      }
+    </script>
+  </body>
+</html>
